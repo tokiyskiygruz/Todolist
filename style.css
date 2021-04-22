@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FFD78A;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+  background-color: #1BA39C;
+  text-align: center;
+  border-radius: 1em;
+  border-style: none;
+  padding: 2rem 10rem;
+  margin-bottom: 15px;
+}
+
+.todo-list .create-new-todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo-list .todo-article_input {
+  font-size: 15px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.todo-list .add-todo_button {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 1em;
+  border-style: none;
+  outline: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2em;
+  background-color: #2C5364;
+}
+
+.wrapper .todo {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: white;
+  list-style: none;
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+
+.wrapper .todo li {
+  border-top: 3px dotted white;
+  padding: 1.5rem;
+}
+
+li.completed {
+  color: #00FF00;
+}
+
+.fa-trash-alt {
+  color: red;
+}
+
+.fa-check {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
