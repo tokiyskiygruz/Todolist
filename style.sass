@@ -1,9 +1,14 @@
+$gray: #1BA39C
+$orange: #FFD78A
+$green: #00FF00
+$taskListColor: #2C5364
+
 *
     box-sizing: border-box
     padding: 0
     margin: 0
 body
-    background-color: #FFD78A
+    background-color: $orange
 .container
     min-height: 100vh
     display: flex
@@ -14,51 +19,65 @@ body
     flex-direction: column
     justify-content: flex-start
     margin-top: 20px
-    background-color: #1BA39C
+    background-color: $gray
     text-align: center
     border-radius: 1em
     border-style: none
-    padding: 2rem 10rem
+    padding: 10px 50px
     margin-bottom: 15px
     .create-new-todo
         display: flex
         flex-direction: column
-    .todo-article_input
+    .todo-article__input
         font-size: 15px
         padding: 5px
         background-color: white
         border: 1px solid gray
         outline: none
-    .add-todo_button
+    .add-todo__button
         font-size: 20px
         margin-top: 10px
         padding: 10px
         background: white
-        border-radius: 1em
+        border-radius: 5px
         border-style: none
         outline: none
 .wrapper
     display: flex
-    border-radius: 2em
-    background-color: #2C5364
+    border-radius: 25px
+    background-color: $taskListColor
     .todo
-        text-align: center
-        flex-grow: 1
         color: white
         list-style: none
-        font-size: 2rem
-        padding: 1.5rem 0
-        li
+        font-size: 30px
+        padding: 25px 0
+        .task
+            display: flex
+            align-items: center
+            justify-content: space-between
             border-top: 3px dotted white
-            padding: 1.5rem
-li.completed
-    color: #00FF00
+            padding: 25px
+        .task__button
+            border: 3px solid skyblue
+            border-radius: 50%
+            background: none
+            padding: 10px
+            font-size: 30px
+            &:first-child
+                margin-left: auto
+            &:not(&:last-child)
+                margin-left: 5px
+                
+                
+        .task__text
+            margin-right: 16px
+        
+
+.completed
+    color: $green
 
 .fa-trash-alt
     color: red
-
-.fa-check
-    margin: 0 10px
             
             
 
