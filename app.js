@@ -1,5 +1,5 @@
-let taskTextInput = document.querySelector('.todo-article__input')
-let addTaskButton = document.querySelector('.add-todo__button')
+let taskTextInput = document.querySelector('.create-new-todo__input')
+let addTaskButton = document.querySelector('.create-new-todo__button')
 let todoList = document.querySelector('.todo')
 
 

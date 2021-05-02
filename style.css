@@ -53,14 +53,14 @@ body {
           flex-direction: column;
 }
 
-.todo-list .todo-article__input {
+.todo-list .create-new-todo .create-new-todo__input {
   font-size: 15px;
   padding: 5px;
   background-color: white;
   border: 1px solid gray;
 }
 
-.todo-list .add-todo__button {
+.todo-list .create-new-todo .create-new-todo__button {
   font-size: 20px;
   margin-top: 10px;
   padding: 10px;
