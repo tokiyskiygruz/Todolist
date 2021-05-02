@@ -5,9 +5,9 @@ let todoList = document.querySelector('.task-table')
 
 
 
-addTaskButton.addEventListener('click', addTodo)
+addTaskButton.addEventListener('click', addToDo)
 
-function addTodo (e) {
+function addToDo (e) {
     e.preventDefault()
 
     let inputValue = taskTextInput.value
