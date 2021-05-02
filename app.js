@@ -1,10 +1,10 @@
-let input = document.querySelector('.todo-article__input')
-let btn = document.querySelector('.add-todo__button')
-let todoUl = document.querySelector('.todo')
+let taskTextInput = document.querySelector('.todo-article__input')
+let addTaskButton = document.querySelector('.add-todo__button')
+let todoList = document.querySelector('.todo')
 
 
-btn.addEventListener('click', () => {
-    let inputValue = input.value 
+addTaskButton.addEventListener('click', () => {
+    let inputValue = taskTextInput.value 
     function addTodo () {
 
         let todoTask = document.createElement('li');
@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
         taskText.classList.add('task__text')
         taskText.innerHTML = inputValue
         todoTask.append(taskText)
-        todoUl.append(todoTask);
+        todoList.append(todoTask);
 
         let buttonWrapper = document.createElement('div')
         todoTask.append(buttonWrapper)
@@ -41,7 +41,7 @@ btn.addEventListener('click', () => {
         trashButton.addEventListener('click', () => {
             todoTask.remove();
         })
-        input.value = ''
+        taskTextInput.value = ''
     }
     addTodo();
 })
