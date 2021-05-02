@@ -58,7 +58,6 @@ body {
   padding: 5px;
   background-color: white;
   border: 1px solid gray;
-  outline: none;
 }
 
 .todo-list .add-todo__button {
@@ -68,7 +67,6 @@ body {
   background: white;
   border-radius: 5px;
   border-style: none;
-  outline: none;
 }
 
 .wrapper {
