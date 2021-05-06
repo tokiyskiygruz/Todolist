@@ -21,11 +21,12 @@ function addToDo (e) {
 
     let buttonWrapper = document.createElement('div')
     todoTask.append(buttonWrapper)
-    checkButton = document.createElement('button')
-    trashButton = document.createElement('button')
+
+    let checkButton = creatingButtons('fa-check')
+    let trashButton = creatingButtons('fa-trash-alt')
+    buttonWrapper.append(checkButton)
+    buttonWrapper.append(trashButton)
     
-    creatingButtons(checkButton, 'fa-check')
-    creatingButtons(trashButton, 'fa-trash-alt')
 
     checkButton.addEventListener('click', () => {
         todoTask.classList.toggle('completed')
@@ -37,13 +38,15 @@ function addToDo (e) {
     })
     taskTextInput.value = ''
 
-    function creatingButtons (createButton, imgType) {
-        buttonWrapper.append(createButton)
+    function creatingButtons (imgType) {
+        let createButton = document.createElement('button')
         createButton.classList.add('task__button')
         buttonImg = document.createElement('i')
         buttonImg.classList.add('fas')
         buttonImg.classList.add(imgType)
         createButton.append(buttonImg)
+
+        return createButton
 
     }
 }
