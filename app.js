@@ -22,8 +22,8 @@ function addToDo (e) {
     let buttonWrapper = document.createElement('div')
     todoTask.append(buttonWrapper)
 
-    let checkButton = creatingButtons('fa-check')
-    let trashButton = creatingButtons('fa-trash-alt')
+    let checkButton = createButtons('fa-check')
+    let trashButton = createButtons('fa-trash-alt')
     buttonWrapper.append(checkButton)
     buttonWrapper.append(trashButton)
     
@@ -38,7 +38,7 @@ function addToDo (e) {
     })
     taskTextInput.value = ''
 
-    function creatingButtons (imgType) {
+    function createButtons (imgType) {
         let createButton = document.createElement('button')
         createButton.classList.add('task__button')
         buttonImg = document.createElement('i')
