@@ -1,0 +1,80 @@
+$gray: #1BA39C
+$orange: #FFD78A
+$green: #00FF00
+$taskListColor: #2C5364
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+body
+    background-color: $orange
+.container
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+.todo-list-panel
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    margin-top: 20px
+    background-color: $gray
+    text-align: center
+    border-radius: 1em
+    border-style: none
+    padding: 10px 50px
+    margin-bottom: 15px
+    .create-new-todo-form
+        display: flex
+        flex-direction: column
+        .create-new-todo-form__input
+            font-size: 15px
+            padding: 5px
+            background-color: white
+            border: 1px solid gray
+        .create-new-todo-form__button
+            font-size: 20px
+            margin-top: 10px
+            padding: 10px
+            background: white
+            border-radius: 5px
+            border-style: none
+.todo-list
+    display: flex
+    border-radius: 25px
+    background-color: $taskListColor
+    .task-table
+        color: white
+        list-style: none
+        font-size: 30px
+        padding: 25px 0
+        .task
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border-top: 3px dotted white
+            padding: 25px
+            .task__button
+                border: 3px solid skyblue
+                border-radius: 50%
+                background: none
+                padding: 10px
+                font-size: 30px
+                &:first-child
+                    margin-left: auto
+                &:not(&:last-child)
+                    margin-left: 5px
+            .task__text
+                margin-right: 16px
+        
+
+.completed
+    color: $green
+
+.fa-trash-alt
+    color: red
+            
+            
+
+    

@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FFD78A;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+  background-color: #1BA39C;
+  text-align: center;
+  border-radius: 1em;
+  border-style: none;
+  padding: 10px 50px;
+  margin-bottom: 15px;
+}
+
+.todo-list-panel .create-new-todo-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo-list-panel .create-new-todo-form .create-new-todo-form__input {
+  font-size: 15px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.todo-list-panel .create-new-todo-form .create-new-todo-form__button {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  background-color: #2C5364;
+}
+
+.todo-list .task-table {
+  color: white;
+  list-style: none;
+  font-size: 30px;
+  padding: 25px 0;
+}
+
+.todo-list .task-table .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 3px dotted white;
+  padding: 25px;
+}
+
+.todo-list .task-table .task .task__button {
+  border: 3px solid skyblue;
+  border-radius: 50%;
+  background: none;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.todo-list .task-table .task .task__button:first-child {
+  margin-left: auto;
+}
+
+.todo-list .task-table .task .task__button {
+  margin-left: 5px;
+}
+
+.todo-list .task-table .task .task__text {
+  margin-right: 16px;
+}
+
+.completed {
+  color: #00FF00;
+}
+
+.fa-trash-alt {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
